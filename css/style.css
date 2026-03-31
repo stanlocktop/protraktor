@@ -105,9 +105,6 @@ a { text-decoration: none; color: inherit; transition: color var(--transition); 
 }
 .top-bar__social a:hover { color: var(--clr-accent); }
 
-/* ===========================
-   ХЕДЕР
-   =========================== */
 .site-header {
   background: #fff;
   border-bottom: 2px solid var(--clr-green);

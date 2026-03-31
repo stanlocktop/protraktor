@@ -8,13 +8,13 @@
 
    Як заповнювати картку:
 
-   cat:      категорія для фільтра — 'tractor' або 'attachment
+   cat:      категорія для фільтра — 'tractor' або 'attachment'
    badge:    текст бейджа на картці (напр. "Трактор колісний", "Навісне", "Новинка")
    badgeNew: true → бейдж жовтий (для новинок); false або відсутній → зелений
    name:     назва товару (заголовок картки та модалки)
    shortDesc:короткий опис під назвою на картці (1–2 речення)
    desc:     повний опис у модальному вікні (2–4 речення)
-   img:      шлях до фото, напр. "img/tractor-ag-120.jpg"
+   img:      шлях до фото, напр. "img/tractor-eurofeng-554-lux.jpg"
    imgAlt:   alt-текст зображення
    specs:    масив характеристик у модалці:
                { label: "Назва параметра", value: "Значення" }
@@ -31,31 +31,11 @@ const PRODUCTS = [
     cat:       'tractor',
     badge:     'Трактор колісний',
     badgeNew:  false,
-    name:      'Трактор2',
-    shortDesc: 'Універсальний колісний трактор для широкого спектру польових робіт',
-    desc:      'Універсальний колісний трактор для широкого спектру польових робіт. Надійний двигун, комфортна кабіна, широкий вибір навісного обладнання.',
-    img:       'img/tractor-ag-120.jpg',
-    imgAlt:    'Трактор АГ-120',
-    specs: [
-      { label: 'Потужність',        value: '120 к.с.' },
-      { label: 'Маса',              value: '5 800 кг' },
-      { label: 'Колісна база',      value: '2 650 мм' },
-      { label: 'Тип трансмісії',    value: 'Механічна, 16+4' },
-      { label: 'ЗПВ',               value: 'До 4 500 кг' },
-      { label: 'Гарантія',          value: '2 роки' },
-    ],
-  },
-
-  // Трактор 1
-  {
-    cat:       'tractor',
-    badge:     'Трактор колісний',
-    badgeNew:  false,
-    name:      'Трактор1',
+    name:      'EUROFENG 554 LUX',
     shortDesc: '—',
     desc:      '—',
-    img:       'img/tractor-ag-180.jpg',
-    imgAlt:    'Трактор1',
+    img:       'img/tractor-eurofeng-554-lux.jpg',
+    imgAlt:    'Трактор колісний EUROFENG 554 LUX',
     specs: [
       { label: 'Потужність',     value: '—' },
       { label: 'Маса',           value: '—' },
@@ -66,16 +46,186 @@ const PRODUCTS = [
     ],
   },
 
-  // Міні-трактор
   {
     cat:       'tractor',
-    badge:     'Новинка',
-    badgeNew:  true,
-    name:      'Міні-трактор1',
+    badge:     'Трактор колісний',
+    badgeNew:  false,
+    name:      'EUROFENG 554DXL',
     shortDesc: '—',
     desc:      '—',
-    img:       'img/tractor-mini.jpg',
-    imgAlt:    'Міні-трактор1',
+    img:       'img/tractor-eurofeng-554dxl.jpg',
+    imgAlt:    'Трактор колісний EUROFENG 554DXL',
+    specs: [
+      { label: 'Потужність',     value: '—' },
+      { label: 'Маса',           value: '—' },
+      { label: 'Колісна база',   value: '—' },
+      { label: 'Тип трансмісії', value: '—' },
+      { label: 'ЗПВ',            value: '—' },
+      { label: 'Гарантія',       value: '—' },
+    ],
+  },
+
+  {
+    cat:       'tractor',
+    badge:     'Трактор колісний',
+    badgeNew:  false,
+    name:      'TERRA FORCE 554LUX',
+    shortDesc: '—',
+    desc:      '—',
+    img:       'img/tractor-terra-force-554lux.jpg',
+    imgAlt:    'Трактор колісний TERRA FORCE 554LUX',
+    specs: [
+      { label: 'Потужність',     value: '—' },
+      { label: 'Маса',           value: '—' },
+      { label: 'Колісна база',   value: '—' },
+      { label: 'Тип трансмісії', value: '—' },
+      { label: 'ЗПВ',            value: '—' },
+      { label: 'Гарантія',       value: '—' },
+    ],
+  },
+
+  {
+    cat:       'tractor',
+    badge:     'Трактор колісний',
+    badgeNew:  false,
+    name:      'ДМТЗ T-252',
+    shortDesc: '—',
+    desc:      '—',
+    img:       'img/tractor-dmtz-t252.jpg',
+    imgAlt:    'Трактор колісний ДМТЗ T-252',
+    specs: [
+      { label: 'Потужність',     value: '—' },
+      { label: 'Маса',           value: '—' },
+      { label: 'Колісна база',   value: '—' },
+      { label: 'Тип трансмісії', value: '—' },
+      { label: 'ЗПВ',            value: '—' },
+      { label: 'Гарантія',       value: '—' },
+    ],
+  },
+
+  {
+    cat:       'tractor',
+    badge:     'Трактор колісний',
+    badgeNew:  false,
+    name:      'ДМТЗ 255B',
+    shortDesc: '—',
+    desc:      '—',
+    img:       'img/tractor-dmtz-255b.jpg',
+    imgAlt:    'Трактор колісний ДМТЗ 255B',
+    specs: [
+      { label: 'Потужність',     value: '—' },
+      { label: 'Маса',           value: '—' },
+      { label: 'Колісна база',   value: '—' },
+      { label: 'Тип трансмісії', value: '—' },
+      { label: 'ЗПВ',            value: '—' },
+      { label: 'Гарантія',       value: '—' },
+    ],
+  },
+
+  {
+    cat:       'tractor',
+    badge:     'Трактор колісний',
+    badgeNew:  false,
+    name:      'ДМТЗ 244X',
+    shortDesc: '—',
+    desc:      '—',
+    img:       'img/tractor-dmtz-244x.jpg',
+    imgAlt:    'Трактор колісний ДМТЗ 244X',
+    specs: [
+      { label: 'Потужність',     value: '—' },
+      { label: 'Маса',           value: '—' },
+      { label: 'Колісна база',   value: '—' },
+      { label: 'Тип трансмісії', value: '—' },
+      { label: 'ЗПВ',            value: '—' },
+      { label: 'Гарантія',       value: '—' },
+    ],
+  },
+
+  {
+    cat:       'tractor',
+    badge:     'Трактор колісний',
+    badgeNew:  false,
+    name:      'TERRA FORCE 3254HX',
+    shortDesc: '—',
+    desc:      '—',
+    img:       'img/tractor-terra-force-3254hx.jpg',
+    imgAlt:    'Трактор колісний TERRA FORCE 3254HX',
+    specs: [
+      { label: 'Потужність',     value: '—' },
+      { label: 'Маса',           value: '—' },
+      { label: 'Колісна база',   value: '—' },
+      { label: 'Тип трансмісії', value: '—' },
+      { label: 'ЗПВ',            value: '—' },
+      { label: 'Гарантія',       value: '—' },
+    ],
+  },
+
+  {
+    cat:       'tractor',
+    badge:     'Трактор колісний',
+    badgeNew:  false,
+    name:      'ДМТЗ 404XC',
+    shortDesc: '—',
+    desc:      '—',
+    img:       'img/tractor-dmtz-404xc.jpg',
+    imgAlt:    'Трактор колісний ДМТЗ 404XC',
+    specs: [
+      { label: 'Потужність',     value: '—' },
+      { label: 'Маса',           value: '—' },
+      { label: 'Колісна база',   value: '—' },
+      { label: 'Тип трансмісії', value: '—' },
+      { label: 'ЗПВ',            value: '—' },
+      { label: 'Гарантія',       value: '—' },
+    ],
+  },
+
+  {
+    cat:       'tractor',
+    badge:     'Трактор колісний',
+    badgeNew:  false,
+    name:      'TERRA FORCE 404HXC',
+    shortDesc: '—',
+    desc:      '—',
+    img:       'img/tractor-terra-force-404hxc.jpg',
+    imgAlt:    'Трактор колісний TERRA FORCE 404HXC',
+    specs: [
+      { label: 'Потужність',     value: '—' },
+      { label: 'Маса',           value: '—' },
+      { label: 'Колісна база',   value: '—' },
+      { label: 'Тип трансмісії', value: '—' },
+      { label: 'ЗПВ',            value: '—' },
+      { label: 'Гарантія',       value: '—' },
+    ],
+  },
+
+  {
+    cat:       'tractor',
+    badge:     'Трактор колісний',
+    badgeNew:  false,
+    name:      'ДМТЗ 544X',
+    shortDesc: '—',
+    desc:      '—',
+    img:       'img/tractor-dmtz-544x.jpg',
+    imgAlt:    'Трактор колісний ДМТЗ 544X',
+    specs: [
+      { label: 'Потужність',     value: '—' },
+      { label: 'Маса',           value: '—' },
+      { label: 'Колісна база',   value: '—' },
+      { label: 'Тип трансмісії', value: '—' },
+      { label: 'ЗПВ',            value: '—' },
+      { label: 'Гарантія',       value: '—' },
+    ],
+  },
+
+  {
+    cat:       'tractor',
+    badge:     'Трактор колісний',
+    badgeNew:  false,
+    name:      'TERRA FORCE 554',
+    shortDesc: '—',
+    desc:      '—',
+    img:       'img/tractor-terra-force-554.jpg',
+    imgAlt:    'Трактор колісний TERRA FORCE 554',
     specs: [
       { label: 'Потужність',     value: '—' },
       { label: 'Маса',           value: '—' },
@@ -90,50 +240,15 @@ const PRODUCTS = [
      НАВІСНЕ ОБЛАДНАННЯ
      ───────────────────────────────────────── */
 
-  // Навісний пристрій 1 — заповніть дані
   {
     cat:       'attachment',
     badge:     'Навісне',
     badgeNew:  false,
-    name:      'Навісний пристрій 1',
+    name:      'Ґрунтофреза ДМТЗ 141225',
     shortDesc: '—',
     desc:      '—',
-    img:       'img/attachment-1.jpg',
-    imgAlt:    'Навісний пристрій 1',
-    specs: [
-      { label: 'Характеристика 1', value: '—' },
-      { label: 'Характеристика 2', value: '—' },
-      { label: 'Характеристика 3', value: '—' },
-    ],
-  },
-
-  // Навісний пристрій 2 — заповніть дані
-  {
-    cat:       'attachment',
-    badge:     'Навісне',
-    badgeNew:  false,
-    name:      'Навісний пристрій 2',
-    shortDesc: '—',
-    desc:      '—',
-    img:       'img/attachment-2.jpg',
-    imgAlt:    'Навісний пристрій 2',
-    specs: [
-      { label: 'Характеристика 1', value: '—' },
-      { label: 'Характеристика 2', value: '—' },
-      { label: 'Характеристика 3', value: '—' },
-    ],
-  },
-
-  // Навісний пристрій 3 — заповніть дані
-  {
-    cat:       'attachment',
-    badge:     'Навісне',
-    badgeNew:  false,
-    name:      'Навісний пристрій 3',
-    shortDesc: '—',
-    desc:      '—',
-    img:       'img/attachment-3.jpg',
-    imgAlt:    'Навісний пристрій 3',
+    img:       'img/attachment-dmtz-141225.jpg',
+    imgAlt:    'Ґрунтофреза ДМТЗ 141225',
     specs: [
       { label: 'Характеристика 1', value: '—' },
       { label: 'Характеристика 2', value: '—' },
@@ -143,10 +258,6 @@ const PRODUCTS = [
 
 ];
 
-
-/* ===========================
-   #РЕНДЕР КАТАЛОГУ
-   =========================== */
 function renderCatalog() {
   const grid = document.getElementById('catalogGrid');
   if (!grid) return;
@@ -176,17 +287,11 @@ function renderCatalog() {
 }
 
 
-/* ===========================
-   ІНІЦІАЛІЗАЦІЯ
-   =========================== */
 document.addEventListener('DOMContentLoaded', () => {
 
-  // Спочатку рендеримо картки з даних
   renderCatalog();
 
-  // #фільтр каталогу
   const filterBtns   = document.querySelectorAll('.filter-btn');
-  const catalogItems = document.querySelectorAll('.catalog-item');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -200,7 +305,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // #модальне вікно товару
   const productModal = document.getElementById('productModal');
   const bsModal = new bootstrap.Modal(productModal);
 
@@ -232,7 +336,6 @@ document.addEventListener('DOMContentLoaded', () => {
     bsModal.show();
   });
 
-  // #плавна прокрутка для хеш-якорів
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
       const target = document.querySelector(link.getAttribute('href'));
@@ -259,7 +362,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // #анімація при прокрутці (Intersection Observer)
   const animateTargets = document.querySelectorAll('.prod-card');
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => {
@@ -280,7 +382,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // #активне посилання в навбарі
   const sections = document.querySelectorAll('section[id]');
   const navLinks  = document.querySelectorAll('.nav-link[href^="#"]');
 
