@@ -345,7 +345,6 @@ function renderCatalog() {
   const grid = document.getElementById('catalogGrid');
   if (!grid) return;
 
-  // Знайти цей блок у main.js і замінити:
   grid.innerHTML = PRODUCTS.map(p => `
       <div class="col-12 col-sm-6 col-lg-4 col-xxl-3 catalog-item" data-cat="${p.cat}">
         <div class="prod-card" data-modal
@@ -364,6 +363,9 @@ function renderCatalog() {
             <h3 class="prod-card__name">${p.name}</h3>
             <p class="prod-card__desc">${p.shortDesc}</p>
             <button class="btn btn-accent btn-sm w-100 prod-card__more">Детальніше</button>
+            <div class="prod-card__price">
+              💰 Ціна: <span>Уточнюйте за телефоном</span>
+            </div>
           </div>
         </div>
       </div>
