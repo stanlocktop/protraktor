@@ -589,10 +589,18 @@ a { text-decoration: none; color: inherit; transition: color var(--transition); 
 .prod-card { cursor: pointer; }
 .prod-card__more { pointer-events: none; }
 
+.modal {
+  /* Разрешаем скролл всей области модалки, если контент не влазит */
+  overflow-y: auto !important; 
+  /* Плавный скролл для айфонов */
+  -webkit-overflow-scrolling: touch; 
+}
+
 .prod-modal {
   border: none;
   border-radius: 14px;
-  overflow: hidden;
+  overflow: visible; 
+  margin: 1.75rem auto;
 }
 .prod-modal__close {
   position: absolute;
@@ -617,7 +625,21 @@ a { text-decoration: none; color: inherit; transition: color var(--transition); 
 .prod-modal__inner {
   display: flex;
   flex-direction: column;
+  background: var(--clr-white); 
+  border-radius: 14px;
+  overflow: hidden;
 }
+
+@media (max-width: 767.98px) {
+  .prod-modal__info {
+    padding: 20px 16px;
+  }
+  .modal-dialog {
+    margin: 10px;
+    max-width: calc(100% - 20px);
+  }
+}
+
 @media (min-width: 768px) {
   .prod-modal__inner { flex-direction: row; }
 }
