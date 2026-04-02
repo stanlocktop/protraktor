@@ -590,18 +590,18 @@ a { text-decoration: none; color: inherit; transition: color var(--transition); 
 .prod-card__more { pointer-events: none; }
 
 .modal {
-  /* Разрешаем скролл всей области модалки, если контент не влазит */
-  overflow-y: auto !important; 
-  /* Плавный скролл для айфонов */
-  -webkit-overflow-scrolling: touch; 
+  overflow-y: auto !important; /* Принудительный вертикальный скролл */
+  -webkit-overflow-scrolling: touch; /* Плавность для iOS */
 }
 
 .prod-modal {
   border: none;
   border-radius: 14px;
-  overflow: visible; 
   margin: 1.75rem auto;
+  overflow: hidden;        /* ← було visible !important */
+  margin-bottom: 50px !important;
 }
+
 .prod-modal__close {
   position: absolute;
   top: 14px;
@@ -625,7 +625,7 @@ a { text-decoration: none; color: inherit; transition: color var(--transition); 
 .prod-modal__inner {
   display: flex;
   flex-direction: column;
-  background: var(--clr-white); 
+  background: var(--clr-white);
   border-radius: 14px;
   overflow: hidden;
 }
@@ -666,7 +666,11 @@ a { text-decoration: none; color: inherit; transition: color var(--transition); 
   display: flex;
   flex-direction: column;
   flex: 1;
+  overflow-y: auto;        /* ← скрол саме тут */
+  max-height: 75vh;        /* ← обмеження висоти */
+  -webkit-overflow-scrolling: touch; /* ← плавно на iOS */
 }
+
 .prod-modal__name {
   font-size: clamp(18px, 3vw, 24px);
   font-weight: 800;
